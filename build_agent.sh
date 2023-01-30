@@ -10,4 +10,4 @@ if [ "$ARCH" = "ppc64le" -o "$ARCH" = "s390x" ]; then export LIBC=gnu; else expo
 [ "${ARCH}" == "ppc64le" ] && export ARCH=powerpc64le
 rustup target add "${ARCH}-unknown-linux-${LIBC}"
 
-make -C kata-containers/src/agent -j80
+make -C kata-containers/src/agent
